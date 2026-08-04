@@ -5,85 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ACCESORIOS AMG</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Segoe UI',sans-serif;background:#fff;color:#222}
-.hero{background:linear-gradient(135deg,#0a0a0a,#1a0a00,#0a0a1a);color:#fff;text-align:center;padding:60px 20px 44px}
-.logo{font-size:clamp(28px,6vw,58px);font-weight:900;letter-spacing:4px}
-.logo span{color:#f5c842}
-.sub{font-size:11px;letter-spacing:6px;color:#aaa;text-transform:uppercase;margin:4px 0 20px}
-.hero p{font-size:15px;color:#ccc;max-width:500px;margin:0 auto 22px}
-.btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-.bh{background:#25d366;color:#fff;font-weight:700;font-size:14px;padding:11px 26px;border-radius:50px;text-decoration:none;display:inline-block}
-.bh2{background:transparent;color:#f5c842;font-weight:700;font-size:14px;padding:11px 26px;border-radius:50px;border:2px solid #f5c842;text-decoration:none;display:inline-block}
-.trust{background:#fff8e8;border-top:3px solid #f5c842;border-bottom:3px solid #f5c842;padding:10px 16px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-.ti{font-size:12px;font-weight:600;color:#5a3a00}
-.tabs{background:#111;position:sticky;top:0;z-index:99;display:flex;overflow-x:auto}
-.tab{flex:1;min-width:100px;text-align:center;padding:14px 6px;color:#888;font-weight:700;font-size:12px;cursor:pointer;border:none;background:none;border-bottom:3px solid transparent;white-space:nowrap}
-.tab.on{color:#f5c842;border-bottom-color:#f5c842}
-.sec{padding:44px 16px;max-width:1200px;margin:0 auto;display:none}
-.sec.on{display:block}
-.stag{display:block;font-size:10px;font-weight:700;letter-spacing:3px;color:#c8860a;text-transform:uppercase;margin-bottom:6px;text-align:center}
-.sec h2{text-align:center;font-size:clamp(20px,4vw,36px);font-weight:900;margin-bottom:6px}
-.sub2{text-align:center;color:#777;font-size:13px;margin-bottom:30px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
-.card{background:#fff;border-radius:14px;box-shadow:0 4px 18px rgba(0,0,0,.09);overflow:hidden;cursor:pointer;transition:transform .2s}
-.card:hover{transform:translateY(-5px)}
-.iw{position:relative;width:100%;height:220px;overflow:hidden;background:#f5f0e8}
-.iw img{width:100%;height:100%;object-fit:cover;object-position:center center;transform:scale(1.5);transform-origin:center center;transition:transform .3s}
-.card:hover .iw img{transform:scale(1.6)}
-.badge{position:absolute;top:9px;left:9px;font-size:10px;font-weight:700;padding:3px 9px;border-radius:18px;z-index:2}
-.body{padding:12px}
-.body h3{font-size:13px;font-weight:800;margin-bottom:2px;color:#1a0a00}
-.stars{color:#f5c842;font-size:11px;margin-bottom:4px}
-.price{font-size:19px;font-weight:900;color:#1a0a00}
-.price span{font-size:11px;font-weight:400;color:#999}
-.ph{width:100%;height:100%;background:linear-gradient(135deg,#1a0a00,#4a2200);display:flex;align-items:center;justify-content:center;font-size:58px}
-.why{background:#0a0a0a;color:#fff;padding:50px 20px}
-.why-in{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-.why-in h2{font-size:clamp(18px,3vw,30px);font-weight:900;margin-bottom:12px}
-.wl{list-style:none;display:flex;flex-direction:column;gap:12px}
-.wl li{display:flex;gap:9px;font-size:12px;line-height:1.5}
-.wl li strong{display:block;font-size:13px;color:#f5c842}
-.wl li span{color:#aaa}
-.wv{background:linear-gradient(135deg,#1a0a00,#6b3a00);border-radius:18px;height:220px;display:flex;align-items:center;justify-content:center;font-size:56px}
-.cta{background:linear-gradient(135deg,#0a0a0a,#1a1a2e);color:#fff;text-align:center;padding:56px 20px}
-.cta h2{font-size:clamp(20px,4vw,38px);font-weight:900;margin-bottom:8px}
-.cta h2 span{color:#f5c842}
-.cta p{font-size:14px;color:#aaa;margin-bottom:22px}
-footer{background:#000;color:#555;text-align:center;padding:18px;font-size:11px}
-footer strong{color:#f5c842}
-.modal-bg{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.7);z-index:9999;align-items:center;justify-content:center;padding:16px}
-.modal-bg.on{display:flex}
-.modal{background:#fff;border-radius:20px;max-width:480px;width:100%;max-height:92vh;overflow-y:auto;position:relative}
-.modal-close{position:absolute;top:12px;right:16px;font-size:26px;cursor:pointer;color:#555;font-weight:300;z-index:2;background:#fff;border-radius:50%;width:34px;height:34px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.15)}
-.modal-img{width:100%;height:280px;object-fit:contain;background:#f9f5ee;border-radius:20px 20px 0 0;padding:10px}
-.modal-body{padding:18px}
-.modal-badge{display:inline-block;font-size:10px;font-weight:700;padding:3px 10px;border-radius:18px;margin-bottom:8px}
-.modal-title{font-size:20px;font-weight:900;color:#1a0a00;margin-bottom:4px}
-.modal-stars{color:#f5c842;font-size:14px;margin-bottom:2px}
-.modal-rating-text{font-size:12px;color:#888;margin-bottom:10px}
-.modal-price{font-size:28px;font-weight:900;color:#1a0a00;margin-bottom:6px}
-.modal-price span{font-size:13px;font-weight:400;color:#999}
-.modal-trust{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
-.modal-trust span{background:#f0fff4;color:#16a34a;font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px;border:1px solid #bbf7d0}
-.modal-wa{display:block;text-align:center;background:#25d366;color:#fff;font-weight:800;font-size:16px;padding:14px;border-radius:12px;text-decoration:none;margin-bottom:16px;letter-spacing:.5px}
-.modal-wa:hover{background:#1da851}
-.modal-divider{border:none;border-top:1px solid #f0f0f0;margin:14px 0}
-.modal-reviews h4{font-size:13px;font-weight:800;color:#333;margin-bottom:10px}
-.review{display:flex;gap:10px;margin-bottom:12px;align-items:flex-start}
-.review-avatar{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#f5c842,#c8860a);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:#fff;flex-shrink:0}
-.review-content{flex:1}
-.review-name{font-size:12px;font-weight:700;color:#1a0a00}
-.review-stars{color:#f5c842;font-size:11px}
-.review-text{font-size:12px;color:#555;margin-top:2px;line-height:1.5}
-@media(max-width:580px){
-.grid{grid-template-columns:1fr 1fr;gap:9px}
-.iw{height:160px}
-.price{font-size:17px}
-.why-in{grid-template-columns:1fr}
-.tab{font-size:11px;padding:12px 5px}
-.modal-img{height:220px}
-}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Segoe UI',sans-serif;background:#fff;color:#222}.hero{background:linear-gradient(135deg,#0a0a0a,#1a0a00,#0a0a1a);color:#fff;text-align:center;padding:60px 20px 44px}.logo{font-size:clamp(28px,6vw,58px);font-weight:900;letter-spacing:4px}.logo span{color:#f5c842}.sub{font-size:11px;letter-spacing:6px;color:#aaa;text-transform:uppercase;margin:4px 0 20px}.hero p{font-size:15px;color:#ccc;max-width:500px;margin:0 auto 22px}.btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.bh{background:#25d366;color:#fff;font-weight:700;font-size:14px;padding:11px 26px;border-radius:50px;text-decoration:none;display:inline-block}.bh2{background:transparent;color:#f5c842;font-weight:700;font-size:14px;padding:11px 26px;border-radius:50px;border:2px solid #f5c842;text-decoration:none;display:inline-block}.trust{background:#fff8e8;border-top:3px solid #f5c842;border-bottom:3px solid #f5c842;padding:10px 16px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}.ti{font-size:12px;font-weight:600;color:#5a3a00}.tabs{background:#111;position:sticky;top:0;z-index:99;display:flex;overflow-x:auto}.tab{flex:1;min-width:100px;text-align:center;padding:14px 6px;color:#888;font-weight:700;font-size:12px;cursor:pointer;border:none;background:none;border-bottom:3px solid transparent;white-space:nowrap}.tab.on{color:#f5c842;border-bottom-color:#f5c842}.sec{padding:44px 16px;max-width:1200px;margin:0 auto;display:none}.sec.on{display:block}.stag{display:block;font-size:10px;font-weight:700;letter-spacing:3px;color:#c8860a;text-transform:uppercase;margin-bottom:6px;text-align:center}.sec h2{text-align:center;font-size:clamp(20px,4vw,36px);font-weight:900;margin-bottom:6px}.sub2{text-align:center;color:#777;font-size:13px;margin-bottom:30px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}.card{background:#fff;border-radius:14px;box-shadow:0 4px 18px rgba(0,0,0,.09);overflow:hidden;cursor:pointer;transition:transform .2s}.card:hover{transform:translateY(-5px)}.iw{position:relative;width:100%;height:220px;overflow:hidden;background:#f5f0e8}.iw img{width:100%;height:100%;object-fit:cover;object-position:center center;transform:scale(1.5);transform-origin:center center;transition:transform .3s}.card:hover .iw img{transform:scale(1.6)}.badge{position:absolute;top:9px;left:9px;font-size:10px;font-weight:700;padding:3px 9px;border-radius:18px;z-index:2}.body{padding:12px}.body h3{font-size:13px;font-weight:800;margin-bottom:2px;color:#1a0a00}.stars{color:#f5c842;font-size:11px;margin-bottom:4px}.price{font-size:19px;font-weight:900;color:#1a0a00}.price span{font-size:11px;font-weight:400;color:#999}.why{background:#0a0a0a;color:#fff;padding:50px 20px}.why-in{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.why-in h2{font-size:clamp(18px,3vw,30px);font-weight:900;margin-bottom:12px}.wl{list-style:none;display:flex;flex-direction:column;gap:12px}.wl li{display:flex;gap:9px;font-size:12px;line-height:1.5}.wl li strong{display:block;font-size:13px;color:#f5c842}.wl li span{color:#aaa}.wv{background:linear-gradient(135deg,#1a0a00,#6b3a00);border-radius:18px;height:220px;display:flex;align-items:center;justify-content:center;font-size:56px}.cta{background:linear-gradient(135deg,#0a0a0a,#1a1a2e);color:#fff;text-align:center;padding:56px 20px}.cta h2{font-size:clamp(20px,4vw,38px);font-weight:900;margin-bottom:8px}.cta h2 span{color:#f5c842}.cta p{font-size:14px;color:#aaa;margin-bottom:22px}footer{background:#000;color:#555;text-align:center;padding:18px;font-size:11px}footer strong{color:#f5c842}.modal-bg{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.7);z-index:9999;align-items:center;justify-content:center;padding:16px}.modal-bg.on{display:flex}.modal{background:#fff;border-radius:20px;max-width:480px;width:100%;max-height:92vh;overflow-y:auto;position:relative}.modal-close{position:absolute;top:12px;right:16px;font-size:26px;cursor:pointer;color:#555;font-weight:300;z-index:2;background:#fff;border-radius:50%;width:34px;height:34px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.15)}.modal-img{width:100%;height:280px;object-fit:contain;background:#f9f5ee;border-radius:20px 20px 0 0;padding:10px}.modal-body{padding:18px}.modal-badge{display:inline-block;font-size:10px;font-weight:700;padding:3px 10px;border-radius:18px;margin-bottom:8px}.modal-title{font-size:20px;font-weight:900;color:#1a0a00;margin-bottom:4px}.modal-stars{color:#f5c842;font-size:14px;margin-bottom:2px}.modal-rating-text{font-size:12px;color:#888;margin-bottom:10px}.modal-price{font-size:28px;font-weight:900;color:#1a0a00;margin-bottom:6px}.modal-price span{font-size:13px;font-weight:400;color:#999}.modal-trust{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}.modal-trust span{background:#f0fff4;color:#16a34a;font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px;border:1px solid #bbf7d0}.modal-wa{display:block;text-align:center;background:#25d366;color:#fff;font-weight:800;font-size:16px;padding:14px;border-radius:12px;text-decoration:none;margin-bottom:16px;letter-spacing:.5px}.modal-wa:hover{background:#1da851}.modal-divider{border:none;border-top:1px solid #f0f0f0;margin:14px 0}.modal-reviews h4{font-size:13px;font-weight:800;color:#333;margin-bottom:10px}.review{display:flex;gap:10px;margin-bottom:12px;align-items:flex-start}.review-avatar{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#f5c842,#c8860a);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:#fff;flex-shrink:0}.review-content{flex:1}.review-name{font-size:12px;font-weight:700;color:#1a0a00}.review-stars{color:#f5c842;font-size:11px}.review-text{font-size:12px;color:#555;margin-top:2px;line-height:1.5}@media(max-width:580px){.grid{grid-template-columns:1fr 1fr;gap:9px}.iw{height:160px}.price{font-size:17px}.why-in{grid-template-columns:1fr}.tab{font-size:11px;padding:12px 5px}.modal-img{height:220px}}
 </style>
 </head>
 <body>
@@ -178,12 +100,7 @@ Envios a toda Colombia · Pago contra entrega · 📱 +57 316 160 0543
 <div class="modal-stars">⭐⭐⭐⭐⭐</div>
 <div class="modal-rating-text">4.9/5 · Mas de 500 clientes satisfechos</div>
 <div class="modal-price" id="m-price"></div>
-<div class="modal-trust">
-<span>✅ Pago contra entrega</span>
-<span>🚚 Envio a toda Colombia</span>
-<span>🔄 Garantia de cambio</span>
-<span>🎁 Con empaque de regalo</span>
-</div>
+<div class="modal-trust"><span>✅ Pago contra entrega</span><span>🚚 Envio a toda Colombia</span><span>🔄 Garantia de cambio</span><span>🎁 Con empaque de regalo</span></div>
 <a class="modal-wa" id="m-wa" href="#" target="_blank">💚 Pedir por WhatsApp ahora</a>
 <hr class="modal-divider">
 <div class="modal-reviews">
@@ -198,15 +115,9 @@ Envios a toda Colombia · Pago contra entrega · 📱 +57 316 160 0543
 
 <script>
 var reviews=[
-[{a:'V',n:'Valentina R.',t:'Me encanto! Llego rapidisimo y tal como en la foto. Ya lo estoy usando y me queda hermoso. 100% recomendado!'},
-{a:'C',n:'Carlos M.',t:'Excelente calidad, se ve fino y elegante. El empaque de regalo estuvo perfecto. Volvere a comprar.'},
-{a:'L',n:'Laura P.',t:'Super buena atencion, me ayudaron a elegir el modelo. Llego en 3 dias a Medellin. Muy feliz!'}],
-[{a:'A',n:'Andres G.',t:'Muy bonito, solido y con brillo real. Pague al recibir y sin problema. Lo recomiendo!'},
-{a:'S',n:'Sofia T.',t:'Me lo regalaron y quede enamorada. La calidad es increible para el precio. Ya pedi otro!'},
-{a:'J',n:'Juan D.',t:'Llego bien empacado y en perfecto estado. Se ve caro jajaja. Gran compra!'}],
-[{a:'M',n:'Maria F.',t:'Lo compre para regalo y mi novio quedo encantado. Muy bien presentado y de excelente calidad.'},
-{a:'D',n:'Diana C.',t:'Compre varios y todos llegaron perfectos. El servicio al cliente es muy atento. 5 estrellas!'},
-{a:'R',n:'Ricardo V.',t:'Bonito, resistente, no se ha opacado nada. Vale cada peso. Volvere a comprar mas!'}]
+[{a:'V',n:'Valentina R.',t:'Me encanto! Llego rapidisimo y tal como en la foto. Ya lo estoy usando y me queda hermoso. 100% recomendado!'},{a:'C',n:'Carlos M.',t:'Excelente calidad, se ve fino y elegante. El empaque de regalo estuvo perfecto. Volvere a comprar.'},{a:'L',n:'Laura P.',t:'Super buena atencion, me ayudaron a elegir el modelo. Llego en 3 dias a Medellin. Muy feliz!'}],
+[{a:'A',n:'Andres G.',t:'Muy bonito, solido y con brillo real. Pague al recibir y sin problema. Lo recomiendo!'},{a:'S',n:'Sofia T.',t:'Me lo regalaron y quede enamorada. La calidad es increible para el precio. Ya pedi otro!'},{a:'J',n:'Juan D.',t:'Llego bien empacado y en perfecto estado. Se ve caro jajaja. Gran compra!'}],
+[{a:'M',n:'Maria F.',t:'Lo compre para regalo y mi novio quedo encantado. Muy bien presentado y de excelente calidad.'},{a:'D',n:'Diana C.',t:'Compre varios y todos llegaron perfectos. El servicio al cliente es muy atento. 5 estrellas!'},{a:'R',n:'Ricardo V.',t:'Bonito, resistente, no se ha opacado nada. Vale cada peso. Volvere a comprar mas!'}]
 ];
 
 var oro=[
@@ -256,7 +167,7 @@ var relojes=[
 var lociones=[
 {img:'IMG_3682.jpeg',name:'LATTAFA Noble Blush',price:'$130.000',badge:'🌸 1.1 MUJER',bc:'#e91e8c',btc:'#fff',waMsg:'LATTAFA+Noble+Blush',r:0},
 {img:'IMG_3684.jpeg',name:'LATTAFA Sublime',price:'$130.000',badge:'✨ 1.1 UNISEX',bc:'#9333ea',btc:'#fff',waMsg:'LATTAFA+Sublime',r:1},
-{img:'a74734c8.jpeg',name:'LATTAFA Oud for Glory',price:'$130.000',badge:'🔥 1.1 HOMBRE',bc:'#dc2626',btc:'#fff',waMsg:'LATTAFA+Oud+for+Glory',r:2},
+{img:'a74734c8-ab54-495d-848b-5aec0c76003b.jpeg',name:'LATTAFA Oud for Glory',price:'$130.000',badge:'🔥 1.1 HOMBRE',bc:'#dc2626',btc:'#fff',waMsg:'LATTAFA+Oud+for+Glory',r:2},
 {img:'IMG_3688.jpeg',name:'Carolina Herrera La Bomba',price:'$135.000',badge:'🌸 1.1 MUJER',bc:'#e91e8c',btc:'#fff',waMsg:'Carolina+Herrera+La+Bomba',r:0},
 {img:'IMG_3690.jpeg',name:'Ralph de Ralph Lauren',price:'$100.000',badge:'🌸 1.1 MUJER',bc:'#e91e8c',btc:'#fff',waMsg:'Ralph+de+Ralph+Lauren',r:1},
 {img:'IMG_3692.jpeg',name:'Invictus Legend',price:'$105.000',badge:'🔥 1.1 HOMBRE',bc:'#dc2626',btc:'#fff',waMsg:'Invictus+Legend',r:2},
